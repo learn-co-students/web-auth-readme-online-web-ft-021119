@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/search', to: 'searches#search'
   post '/search', to: 'searches#foursquare'
 
+  get '/friends', to: 'searches#friends'
+
 end
