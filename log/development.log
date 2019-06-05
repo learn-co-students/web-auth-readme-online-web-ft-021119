@@ -1347,3 +1347,49 @@ Filter chain halted as :authenticate_user rendered or redirected
 Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-06-05 13:08:51 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/bebopvinh/.rvm/gems/ruby-2.6.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 13:09:19 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 13:09:58 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=TZGVQXMJJSZGQHBGNSCUAAYWV0ZAH3ZKJAU5TXQJU2CB2AZQ" for 127.0.0.1 at 2019-06-05 13:10:01 -0700
+Processing by SearchesController#create as HTML
+  Parameters: {"code"=>"TZGVQXMJJSZGQHBGNSCUAAYWV0ZAH3ZKJAU5TXQJU2CB2AZQ"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 398ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 13:10:02 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 196ms (Views: 193.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-06-05 13:10:02 -0700
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-06-05 13:10:02 -0700
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-06-05 13:10:02 -0700
+Started GET "/friends" for 127.0.0.1 at 2019-06-05 13:10:08 -0700
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 310ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
