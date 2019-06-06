@@ -1430,3 +1430,102 @@ Processing by SearchesController#friends as HTML
 Completed 200 OK in 572ms (Views: 24.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:05 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/bebopvinh/.rvm/gems/ruby-2.6.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-06-05 21:31:10 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt34aaioVwMUVzxq7twO0qwgREAZd5QCIptA7jgPLW03qSQwnc/Ldn/TpfRVMaKPF9AfwCxnlugZs5cYrGJeGA==", "zipcode"=>"90805", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 837ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:18 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:41 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=ZW3S1YU4FIU2EV2YAHK0OUVQW2N3YGCBMI3EXRIBP2SCOSEJ" for 127.0.0.1 at 2019-06-05 21:31:42 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"ZW3S1YU4FIU2EV2YAHK0OUVQW2N3YGCBMI3EXRIBP2SCOSEJ"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 583ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:42 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:50 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=CM1NIBRXZAA5JZQSBFNX4KTM2I1IOTTTN3AYQWUS0JTWK2DP" for 127.0.0.1 at 2019-06-05 21:31:50 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"CM1NIBRXZAA5JZQSBFNX4KTM2I1IOTTTN3AYQWUS0JTWK2DP"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 501ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:31:51 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:32:16 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=NSFPBVY2JTJ2VIFNWLTHBUFEYAEEXT15DV1KHICNEJ3LNIG2&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=FTEGZKZBTZUEZWNCLUFJZYDALJ5D3AX402ZFC1YDM5C5YR14" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"FTEGZKZBTZUEZWNCLUFJZYDALJ5D3AX402ZFC1YDM5C5YR14"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 499ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-06-05 21:32:23 -0700
+Started POST "/search" for 127.0.0.1 at 2019-06-05 21:32:27 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uu6yUoT2RWO1S8efDsqOD0yTXK8pGYybJX4sIMS+yRpmTxM2Aub8Sksw5VFBKyCCP3tdupR31DdfW+FGVPvlcw==", "zipcode"=>"90805", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 693ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
