@@ -1920,3 +1920,38 @@ Processing by SearchesController#search as HTML
 Redirected to https://foursquare.com/oauth2/authenticate?client_id=Q3WX4HYM3TK2GIM01RYB032ZHXULEJX2NIE5JDS5EKIMVRE4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
 Filter chain halted as :authenticate_user rendered or redirected
 Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-06-06 08:49:21 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=PCAD40AFOBFMGPP4QVHRPTJBU4GFZD4QMDC0Y0HRQDWVARCX" for 127.0.0.1 at 2019-06-06 08:49:25 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"PCAD40AFOBFMGPP4QVHRPTJBU4GFZD4QMDC0Y0HRQDWVARCX"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 990ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 08:49:26 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=HB5FMMOJ3QCCUVSUUROZNIFBENMVYQ3DIMEIREAAA4IYDBF2" for 127.0.0.1 at 2019-06-06 08:49:59 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"HB5FMMOJ3QCCUVSUUROZNIFBENMVYQ3DIMEIREAAA4IYDBF2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 483ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 08:50:00 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
